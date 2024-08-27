@@ -7,18 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A03A2F5C2C60E13200362F2E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A2F552C60E13200362F2E /* Endpoint.swift */; };
-		A03A2F5E2C60E13200362F2E /* ITunesEndpointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A2F572C60E13200362F2E /* ITunesEndpointTests.swift */; };
-		A03A2F5F2C60E13200362F2E /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A2F582C60E13200362F2E /* NetworkEngine.swift */; };
-		A03A2F602C60E13200362F2E /* NetworkEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A2F592C60E13200362F2E /* NetworkEngineTests.swift */; };
-		A03A2F612C60E13200362F2E /* TestURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03A2F5A2C60E13200362F2E /* TestURLProtocol.swift */; };
+		A01234502C760ECD007C0F70 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012344F2C760ECD007C0F70 /* APIClient.swift */; };
+		A01234522C7611F7007C0F70 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01234512C7611F7007C0F70 /* NetworkError.swift */; };
 		A093C3322C3E83FF009942B7 /* TemplateiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */; };
 		A093C3342C3E83FF009942B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3332C3E83FF009942B7 /* ContentView.swift */; };
-		A093C3362C3E8401009942B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A093C3352C3E8401009942B7 /* Assets.xcassets */; };
 		A093C3392C3E8401009942B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A093C3382C3E8401009942B7 /* Preview Assets.xcassets */; };
 		A093C3432C3E8401009942B7 /* TemplateiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3422C3E8401009942B7 /* TemplateiOSTests.swift */; };
 		A093C34D2C3E8401009942B7 /* TemplateiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C34C2C3E8401009942B7 /* TemplateiOSUITests.swift */; };
 		A093C34F2C3E8401009942B7 /* TemplateiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C34E2C3E8401009942B7 /* TemplateiOSUITestsLaunchTests.swift */; };
+		A0A0F1772C7DEF2F00718EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A0F1752C7DEF2F00718EF1 /* Assets.xcassets */; };
 		A0E3A0942C5BAD44007F68E0 /* release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0912C5BAD44007F68E0 /* release.xcconfig */; };
 		A0E3A0952C5BAD44007F68E0 /* stage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */; };
 		A0E3A0962C5BAD44007F68E0 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */; };
@@ -44,21 +41,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A03A2F552C60E13200362F2E /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		A03A2F572C60E13200362F2E /* ITunesEndpointTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ITunesEndpointTests.swift; sourceTree = "<group>"; };
-		A03A2F582C60E13200362F2E /* NetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
-		A03A2F592C60E13200362F2E /* NetworkEngineTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngineTests.swift; sourceTree = "<group>"; };
-		A03A2F5A2C60E13200362F2E /* TestURLProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestURLProtocol.swift; sourceTree = "<group>"; };
+		A012344F2C760ECD007C0F70 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		A01234512C7611F7007C0F70 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A093C32E2C3E83FF009942B7 /* TemplateiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSApp.swift; sourceTree = "<group>"; };
 		A093C3332C3E83FF009942B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A093C3352C3E8401009942B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A093C3382C3E8401009942B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A093C33E2C3E8401009942B7 /* TemplateiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A093C3422C3E8401009942B7 /* TemplateiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSTests.swift; sourceTree = "<group>"; };
 		A093C3482C3E8401009942B7 /* TemplateiOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateiOSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A093C34C2C3E8401009942B7 /* TemplateiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSUITests.swift; sourceTree = "<group>"; };
 		A093C34E2C3E8401009942B7 /* TemplateiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A0A0F1752C7DEF2F00718EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0E3A0912C5BAD44007F68E0 /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = stage.xcconfig; sourceTree = "<group>"; };
 		A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
@@ -94,11 +88,8 @@
 		A03A2F5B2C60E13200362F2E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A03A2F552C60E13200362F2E /* Endpoint.swift */,
-				A03A2F572C60E13200362F2E /* ITunesEndpointTests.swift */,
-				A03A2F582C60E13200362F2E /* NetworkEngine.swift */,
-				A03A2F592C60E13200362F2E /* NetworkEngineTests.swift */,
-				A03A2F5A2C60E13200362F2E /* TestURLProtocol.swift */,
+				A012344F2C760ECD007C0F70 /* APIClient.swift */,
+				A01234512C7611F7007C0F70 /* NetworkError.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -126,15 +117,11 @@
 		A093C3302C3E83FF009942B7 /* TemplateiOS */ = {
 			isa = PBXGroup;
 			children = (
+				A0A0F1762C7DEF2F00718EF1 /* App */,
 				A0E3A0902C5BAD00007F68E0 /* Views */,
-				A0E3A08F2C5BACF5007F68E0 /* Secrets */,
 				A0E3A08E2C5BACE0007F68E0 /* Configuration */,
-				A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */,
-				A093C3332C3E83FF009942B7 /* ContentView.swift */,
-				A093C3352C3E8401009942B7 /* Assets.xcassets */,
 				A03A2F5B2C60E13200362F2E /* Networking */,
 				A093C3372C3E8401009942B7 /* Preview Content */,
-				A0F36AEF2C5CF6160072B8F9 /* Localizable.xcstrings */,
 			);
 			path = TemplateiOS;
 			sourceTree = "<group>";
@@ -164,6 +151,17 @@
 			path = TemplateiOSUITests;
 			sourceTree = "<group>";
 		};
+		A0A0F1762C7DEF2F00718EF1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */,
+				A093C3332C3E83FF009942B7 /* ContentView.swift */,
+				A0F36AEF2C5CF6160072B8F9 /* Localizable.xcstrings */,
+				A0A0F1752C7DEF2F00718EF1 /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		A0E3A08E2C5BACE0007F68E0 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,13 +170,6 @@
 				A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */,
 			);
 			path = Configuration;
-			sourceTree = "<group>";
-		};
-		A0E3A08F2C5BACF5007F68E0 /* Secrets */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Secrets;
 			sourceTree = "<group>";
 		};
 		A0E3A0902C5BAD00007F68E0 /* Views */ = {
@@ -304,8 +295,8 @@
 				A0E3A0952C5BAD44007F68E0 /* stage.xcconfig in Resources */,
 				A0F36AF02C5CF6160072B8F9 /* Localizable.xcstrings in Resources */,
 				A093C3392C3E8401009942B7 /* Preview Assets.xcassets in Resources */,
+				A0A0F1772C7DEF2F00718EF1 /* Assets.xcassets in Resources */,
 				A0E3A0962C5BAD44007F68E0 /* dev.xcconfig in Resources */,
-				A093C3362C3E8401009942B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,12 +343,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A093C3342C3E83FF009942B7 /* ContentView.swift in Sources */,
-				A03A2F5F2C60E13200362F2E /* NetworkEngine.swift in Sources */,
-				A03A2F602C60E13200362F2E /* NetworkEngineTests.swift in Sources */,
-				A03A2F5C2C60E13200362F2E /* Endpoint.swift in Sources */,
-				A03A2F612C60E13200362F2E /* TestURLProtocol.swift in Sources */,
+				A01234522C7611F7007C0F70 /* NetworkError.swift in Sources */,
+				A01234502C760ECD007C0F70 /* APIClient.swift in Sources */,
 				A093C3322C3E83FF009942B7 /* TemplateiOSApp.swift in Sources */,
-				A03A2F5E2C60E13200362F2E /* ITunesEndpointTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
