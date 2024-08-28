@@ -155,7 +155,6 @@
 			isa = PBXGroup;
 			children = (
 				A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */,
-				A093C3332C3E83FF009942B7 /* ContentView.swift */,
 				A0F36AEF2C5CF6160072B8F9 /* Localizable.xcstrings */,
 				A0A0F1752C7DEF2F00718EF1 /* Assets.xcassets */,
 			);
@@ -175,6 +174,7 @@
 		A0E3A0902C5BAD00007F68E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A093C3332C3E83FF009942B7 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
