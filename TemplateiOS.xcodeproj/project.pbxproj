@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A01234502C760ECD007C0F70 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A012344F2C760ECD007C0F70 /* APIClient.swift */; };
 		A01234522C7611F7007C0F70 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01234512C7611F7007C0F70 /* NetworkError.swift */; };
+		A061F3DA2C9C2B4B001F1EB4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061F3D82C9C2B4B001F1EB4 /* Endpoint.swift */; };
+		A061F3DB2C9C2B4B001F1EB4 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061F3D92C9C2B4B001F1EB4 /* NetworkEngine.swift */; };
 		A093C3322C3E83FF009942B7 /* TemplateiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */; };
 		A093C3342C3E83FF009942B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3332C3E83FF009942B7 /* ContentView.swift */; };
 		A093C3392C3E8401009942B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A093C3382C3E8401009942B7 /* Preview Assets.xcassets */; };
@@ -19,7 +20,6 @@
 		A0E3A0942C5BAD44007F68E0 /* release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0912C5BAD44007F68E0 /* release.xcconfig */; };
 		A0E3A0952C5BAD44007F68E0 /* stage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */; };
 		A0E3A0962C5BAD44007F68E0 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */; };
-		A0E3A0AE2C5BB9C3007F68E0 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = A0E3A0AD2C5BB9C3007F68E0 /* CombineMoya */; };
 		A0F36AF02C5CF6160072B8F9 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A0F36AEF2C5CF6160072B8F9 /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
@@ -41,8 +41,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A012344F2C760ECD007C0F70 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A01234512C7611F7007C0F70 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		A061F3D82C9C2B4B001F1EB4 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		A061F3D92C9C2B4B001F1EB4 /* NetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
 		A093C32E2C3E83FF009942B7 /* TemplateiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSApp.swift; sourceTree = "<group>"; };
 		A093C3332C3E83FF009942B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,7 +65,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0E3A0AE2C5BB9C3007F68E0 /* CombineMoya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +88,8 @@
 		A03A2F5B2C60E13200362F2E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				A012344F2C760ECD007C0F70 /* APIClient.swift */,
+				A061F3D82C9C2B4B001F1EB4 /* Endpoint.swift */,
+				A061F3D92C9C2B4B001F1EB4 /* NetworkEngine.swift */,
 				A01234512C7611F7007C0F70 /* NetworkError.swift */,
 			);
 			path = Networking;
@@ -197,7 +198,6 @@
 			);
 			name = TemplateiOS;
 			packageProductDependencies = (
-				A0E3A0AD2C5BB9C3007F68E0 /* CombineMoya */,
 			);
 			productName = TemplateiOS;
 			productReference = A093C32E2C3E83FF009942B7 /* TemplateiOS.app */;
@@ -273,7 +273,6 @@
 			);
 			mainGroup = A093C3252C3E83FF009942B7;
 			packageReferences = (
-				A0E3A0AC2C5BB9C3007F68E0 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = A093C32F2C3E83FF009942B7 /* Products */;
 			projectDirPath = "";
@@ -343,8 +342,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A093C3342C3E83FF009942B7 /* ContentView.swift in Sources */,
+				A061F3DB2C9C2B4B001F1EB4 /* NetworkEngine.swift in Sources */,
 				A01234522C7611F7007C0F70 /* NetworkError.swift in Sources */,
-				A01234502C760ECD007C0F70 /* APIClient.swift in Sources */,
+				A061F3DA2C9C2B4B001F1EB4 /* Endpoint.swift in Sources */,
 				A093C3322C3E83FF009942B7 /* TemplateiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -806,25 +806,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		A0E3A0AC2C5BB9C3007F68E0 /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 15.0.3;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A0E3A0AD2C5BB9C3007F68E0 /* CombineMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A0E3A0AC2C5BB9C3007F68E0 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = CombineMoya;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A093C3262C3E83FF009942B7 /* Project object */;
 }
