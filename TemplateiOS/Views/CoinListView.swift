@@ -8,12 +8,29 @@
 import SwiftUI
 
 struct CoinListView: View {
-        
+    
+    @ObservedObject private var model: CoinsModel
+    
+    init(model: CoinsModel) {
+        self.model = model
+    }
+    
     var body: some View {
         VStack {
             header
+            
+            VStack {
+                Text(AppConfig.apiKey)
+                Text(AppConfig.baseUrl)
+                
+                Text("\(model.coins.count)")
+                    .font(.largeTitle)
+            }
         }
         .padding(.horizontal, 15)
+        .task {
+            await model.fetchgeckoCoins()
+        }
     }
     
     private var header: some View {
@@ -37,5 +54,5 @@ struct CoinListView: View {
 }
 
 #Preview {
-    CoinListView()
+    CoinListView(model: CoinsModel())
 }

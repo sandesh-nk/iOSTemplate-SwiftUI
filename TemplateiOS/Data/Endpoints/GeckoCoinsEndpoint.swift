@@ -14,24 +14,33 @@ enum GeckoCoinsEndpoint {
 
 extension GeckoCoinsEndpoint: Endpoint {
     var scheme: String {
-        return ""
+        return "https"
     }
     
     var baseURL: String {
-        return ""
+        return AppConfig.baseUrl
     }
     
     var path: String {
-        return ""
+        switch self {
+        case .getCoinList:
+            "/api/v3/coins/markets"
+        case .getCoinDetails:
+            ""
+        }
     }
     
     var queryItems: [URLQueryItem] {
-        return []
+        switch self {
+        case .getCoinList:
+            return [URLQueryItem(name: "vs_currency", value: "inr"),
+                    URLQueryItem(name: "per_page", value: "20")]
+        case .getCoinDetails:
+            return []
+        }
     }
     
     var method: String {
-        return ""
+        return "GET"
     }
-    
-    
 }
