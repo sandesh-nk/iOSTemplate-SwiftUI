@@ -6,6 +6,11 @@
 xcuserdata/
 .DS_Store
 
+##App Secrets
+TemplateiOS/Configuration/dev_secrets.xcconfig
+TemplateiOS/Configuration/stage_secrets.xcconfig
+TemplateiOS/Configuration/release_secrets.xcconfig
+
 ## Obj-C/Swift specific
 *.hmap
 

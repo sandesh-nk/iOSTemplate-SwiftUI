@@ -8,18 +8,20 @@
 import Foundation
 import Combine
 
-final class NetworkEngine {
+final class NetworkEngine<E: Endpoint> {
     private let urlSession: URLSession
+    private let mockRquest: Bool
     
-    init(urlSession: URLSession) {
+    init(urlSession: URLSession = .shared, mockRquest: Bool) {
         self.urlSession = urlSession
+        self.mockRquest = mockRquest
     }
     
     ///  Makes network request for given endpoint
     ///  - Parameters:
     ///  - endpoint: instance of type `Endpoint` representing url request endpoint
     ///  - Returns: AnyPublisher<T, NetworkError>, where T is Decodable
-    func makeRequest<T: Decodable>(for endpoint: Endpoint) async -> AnyPublisher<T, NetworkError> {
+    func makeRequest<T: Decodable>(for endpoint: E) async -> AnyPublisher<T, NetworkError> {
         
         guard let urlRequest = endpoint.generateURLRequest() else {
             return Fail<T, NetworkError>(error: .inValidEndPoint)
@@ -40,8 +42,8 @@ final class NetworkEngine {
                     }
                 } else { throw NetworkError.invalidResponse}
             }
-            .map{ $0 }
-            .mapError { $0 as! NetworkError }
+            .map { $0 }
+            .mapError { $0 as? NetworkError ?? .unknownError }
             .eraseToAnyPublisher()
     }
     
@@ -49,7 +51,7 @@ final class NetworkEngine {
     ///  - Parameters:
     ///  - endpoint: instance of type `Endpoint` representing url request endpoint
     ///  - Returns: Result<T, NetworkError>, where T is Decodable
-    func makeRequest<T: Decodable>(for endpoint: Endpoint) async -> Result<T, NetworkError> {
+    func makeRequest<T: Decodable>(for endpoint: E) async -> Result<T, NetworkError> {
         guard let urlRequest = endpoint.generateURLRequest() else {
             return .failure(.inValidEndPoint)
         }
@@ -74,4 +76,3 @@ final class NetworkEngine {
         }
     }
 }
-

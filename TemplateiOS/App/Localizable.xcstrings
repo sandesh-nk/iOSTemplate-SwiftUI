@@ -1,11 +1,14 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "Hello, world!" : {
+    "Hello" : {
 
     },
     "iOS_template" : {
       "extractionState" : "manual"
+    },
+    "User" : {
+
     }
   },
   "version" : "1.0"

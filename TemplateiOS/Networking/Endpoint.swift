@@ -25,7 +25,6 @@ protocol Endpoint {
     func generateURLRequest() -> URLRequest?
 }
 
-
 extension Endpoint {
     func generateURLRequest() -> URLRequest? {
         var components = URLComponents()

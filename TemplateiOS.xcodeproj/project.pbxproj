@@ -10,13 +10,22 @@
 		A01234522C7611F7007C0F70 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01234512C7611F7007C0F70 /* NetworkError.swift */; };
 		A061F3DA2C9C2B4B001F1EB4 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061F3D82C9C2B4B001F1EB4 /* Endpoint.swift */; };
 		A061F3DB2C9C2B4B001F1EB4 /* NetworkEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A061F3D92C9C2B4B001F1EB4 /* NetworkEngine.swift */; };
+		A0732F232CAA92ED0069C9FC /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0732F222CAA92ED0069C9FC /* RootView.swift */; };
+		A0732F252CAA9EA20069C9FC /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0732F242CAA9EA20069C9FC /* AppConfig.swift */; };
+		A0732F272CAAABC60069C9FC /* CoinListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0732F262CAAABC60069C9FC /* CoinListView.swift */; };
+		A0732F2A2CAAB0AF0069C9FC /* AppEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0732F292CAAB0AF0069C9FC /* AppEnvironment.swift */; };
+		A0732F312CAAB2650069C9FC /* GeckoCoinsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0732F302CAAB2650069C9FC /* GeckoCoinsService.swift */; };
+		A0732F342CAAB3170069C9FC /* GeckoCoinsEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0732F332CAAB3170069C9FC /* GeckoCoinsEndpoint.swift */; };
+		A0732F362CAABDC80069C9FC /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0732F352CAABDC80069C9FC /* Coin.swift */; };
 		A093C3322C3E83FF009942B7 /* TemplateiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */; };
-		A093C3342C3E83FF009942B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3332C3E83FF009942B7 /* ContentView.swift */; };
 		A093C3392C3E8401009942B7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A093C3382C3E8401009942B7 /* Preview Assets.xcassets */; };
 		A093C3432C3E8401009942B7 /* TemplateiOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C3422C3E8401009942B7 /* TemplateiOSTests.swift */; };
 		A093C34D2C3E8401009942B7 /* TemplateiOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C34C2C3E8401009942B7 /* TemplateiOSUITests.swift */; };
 		A093C34F2C3E8401009942B7 /* TemplateiOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A093C34E2C3E8401009942B7 /* TemplateiOSUITestsLaunchTests.swift */; };
 		A0A0F1772C7DEF2F00718EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0A0F1752C7DEF2F00718EF1 /* Assets.xcassets */; };
+		A0CC6D202CBE4536008C17C5 /* dev_secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0CC6D1D2CBE4536008C17C5 /* dev_secrets.xcconfig */; };
+		A0CC6D212CBE4536008C17C5 /* release_secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0CC6D1E2CBE4536008C17C5 /* release_secrets.xcconfig */; };
+		A0CC6D222CBE4536008C17C5 /* stage_secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0CC6D1F2CBE4536008C17C5 /* stage_secrets.xcconfig */; };
 		A0E3A0942C5BAD44007F68E0 /* release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0912C5BAD44007F68E0 /* release.xcconfig */; };
 		A0E3A0952C5BAD44007F68E0 /* stage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */; };
 		A0E3A0962C5BAD44007F68E0 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */; };
@@ -44,9 +53,15 @@
 		A01234512C7611F7007C0F70 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		A061F3D82C9C2B4B001F1EB4 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		A061F3D92C9C2B4B001F1EB4 /* NetworkEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkEngine.swift; sourceTree = "<group>"; };
+		A0732F222CAA92ED0069C9FC /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		A0732F242CAA9EA20069C9FC /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		A0732F262CAAABC60069C9FC /* CoinListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListView.swift; sourceTree = "<group>"; };
+		A0732F292CAAB0AF0069C9FC /* AppEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEnvironment.swift; sourceTree = "<group>"; };
+		A0732F302CAAB2650069C9FC /* GeckoCoinsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeckoCoinsService.swift; sourceTree = "<group>"; };
+		A0732F332CAAB3170069C9FC /* GeckoCoinsEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeckoCoinsEndpoint.swift; sourceTree = "<group>"; };
+		A0732F352CAABDC80069C9FC /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 		A093C32E2C3E83FF009942B7 /* TemplateiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TemplateiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSApp.swift; sourceTree = "<group>"; };
-		A093C3332C3E83FF009942B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A093C3382C3E8401009942B7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A093C33E2C3E8401009942B7 /* TemplateiOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TemplateiOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A093C3422C3E8401009942B7 /* TemplateiOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSTests.swift; sourceTree = "<group>"; };
@@ -54,6 +69,10 @@
 		A093C34C2C3E8401009942B7 /* TemplateiOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSUITests.swift; sourceTree = "<group>"; };
 		A093C34E2C3E8401009942B7 /* TemplateiOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateiOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A0A0F1752C7DEF2F00718EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0CC6D1D2CBE4536008C17C5 /* dev_secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev_secrets.xcconfig; sourceTree = "<group>"; };
+		A0CC6D1E2CBE4536008C17C5 /* release_secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = release_secrets.xcconfig; sourceTree = "<group>"; };
+		A0CC6D1F2CBE4536008C17C5 /* stage_secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = stage_secrets.xcconfig; sourceTree = "<group>"; };
+		A0CC6D252CBE48C6008C17C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A0E3A0912C5BAD44007F68E0 /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = stage.xcconfig; sourceTree = "<group>"; };
 		A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
@@ -95,6 +114,47 @@
 			path = Networking;
 			sourceTree = "<group>";
 		};
+		A0732F282CAAAE350069C9FC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A0732F352CAABDC80069C9FC /* Coin.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0732F2D2CAAB22A0069C9FC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A0732F322CAAB2FF0069C9FC /* Endpoints */,
+				A0732F2E2CAAB2380069C9FC /* Services */,
+				A0732F2F2CAAB2410069C9FC /* Repositories */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A0732F2E2CAAB2380069C9FC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A0732F302CAAB2650069C9FC /* GeckoCoinsService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A0732F2F2CAAB2410069C9FC /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A0732F322CAAB2FF0069C9FC /* Endpoints */ = {
+			isa = PBXGroup;
+			children = (
+				A0732F332CAAB3170069C9FC /* GeckoCoinsEndpoint.swift */,
+			);
+			path = Endpoints;
+			sourceTree = "<group>";
+		};
 		A093C3252C3E83FF009942B7 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +178,10 @@
 		A093C3302C3E83FF009942B7 /* TemplateiOS */ = {
 			isa = PBXGroup;
 			children = (
+				A0CC6D252CBE48C6008C17C5 /* Info.plist */,
+				A0CC6D1C2CBD24BB008C17C5 /* Store */,
+				A0732F2D2CAAB22A0069C9FC /* Data */,
+				A0732F282CAAAE350069C9FC /* Models */,
 				A0A0F1762C7DEF2F00718EF1 /* App */,
 				A0E3A0902C5BAD00007F68E0 /* Views */,
 				A0E3A08E2C5BACE0007F68E0 /* Configuration */,
@@ -156,10 +220,20 @@
 			isa = PBXGroup;
 			children = (
 				A093C3312C3E83FF009942B7 /* TemplateiOSApp.swift */,
+				A0732F242CAA9EA20069C9FC /* AppConfig.swift */,
 				A0F36AEF2C5CF6160072B8F9 /* Localizable.xcstrings */,
 				A0A0F1752C7DEF2F00718EF1 /* Assets.xcassets */,
+				A0732F222CAA92ED0069C9FC /* RootView.swift */,
+				A0732F292CAAB0AF0069C9FC /* AppEnvironment.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		A0CC6D1C2CBD24BB008C17C5 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		A0E3A08E2C5BACE0007F68E0 /* Configuration */ = {
@@ -168,6 +242,9 @@
 				A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */,
 				A0E3A0912C5BAD44007F68E0 /* release.xcconfig */,
 				A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */,
+				A0CC6D1D2CBE4536008C17C5 /* dev_secrets.xcconfig */,
+				A0CC6D1E2CBE4536008C17C5 /* release_secrets.xcconfig */,
+				A0CC6D1F2CBE4536008C17C5 /* stage_secrets.xcconfig */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -175,7 +252,7 @@
 		A0E3A0902C5BAD00007F68E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				A093C3332C3E83FF009942B7 /* ContentView.swift */,
+				A0732F262CAAABC60069C9FC /* CoinListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -296,6 +373,9 @@
 				A093C3392C3E8401009942B7 /* Preview Assets.xcassets in Resources */,
 				A0A0F1772C7DEF2F00718EF1 /* Assets.xcassets in Resources */,
 				A0E3A0962C5BAD44007F68E0 /* dev.xcconfig in Resources */,
+				A0CC6D202CBE4536008C17C5 /* dev_secrets.xcconfig in Resources */,
+				A0CC6D212CBE4536008C17C5 /* release_secrets.xcconfig in Resources */,
+				A0CC6D222CBE4536008C17C5 /* stage_secrets.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,10 +421,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A093C3342C3E83FF009942B7 /* ContentView.swift in Sources */,
+				A0732F312CAAB2650069C9FC /* GeckoCoinsService.swift in Sources */,
 				A061F3DB2C9C2B4B001F1EB4 /* NetworkEngine.swift in Sources */,
+				A0732F272CAAABC60069C9FC /* CoinListView.swift in Sources */,
+				A0732F232CAA92ED0069C9FC /* RootView.swift in Sources */,
+				A0732F252CAA9EA20069C9FC /* AppConfig.swift in Sources */,
+				A0732F342CAAB3170069C9FC /* GeckoCoinsEndpoint.swift in Sources */,
 				A01234522C7611F7007C0F70 /* NetworkError.swift in Sources */,
+				A0732F2A2CAAB0AF0069C9FC /* AppEnvironment.swift in Sources */,
 				A061F3DA2C9C2B4B001F1EB4 /* Endpoint.swift in Sources */,
+				A0732F362CAABDC80069C9FC /* Coin.swift in Sources */,
 				A093C3322C3E83FF009942B7 /* TemplateiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,8 +534,9 @@
 		};
 		A03A2F662C60ECF900362F2E /* Stage */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CC6D1F2CBE4536008C17C5 /* stage_secrets.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_COMPILER_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -457,6 +544,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TemplateiOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -634,8 +722,9 @@
 		};
 		A093C3532C3E8401009942B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CC6D1D2CBE4536008C17C5 /* dev_secrets.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_COMPILER_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -643,6 +732,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TemplateiOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -663,8 +753,9 @@
 		};
 		A093C3542C3E8401009942B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0CC6D1E2CBE4536008C17C5 /* release_secrets.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSETCATALOG_COMPILER_APPICON_NAME)";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -672,6 +763,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TemplateiOS/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
