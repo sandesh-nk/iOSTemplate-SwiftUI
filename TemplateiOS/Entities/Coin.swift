@@ -34,4 +34,12 @@ struct Coin: Identifiable, Codable {
         case percentageChage24Hours = "price_change_percentage_24h"
         case lastUpdated = "last_updated"
     }
+    
+    var imageURL: URL? {
+        URL(string: image)
+    }
+    
+    var is24HourChangePositive: Bool {
+        priceChange24Hour >= 0
+    }
 }

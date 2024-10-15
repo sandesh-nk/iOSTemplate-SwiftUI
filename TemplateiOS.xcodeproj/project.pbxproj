@@ -27,6 +27,7 @@
 		A0CC6D212CBE4536008C17C5 /* release_secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0CC6D1E2CBE4536008C17C5 /* release_secrets.xcconfig */; };
 		A0CC6D222CBE4536008C17C5 /* stage_secrets.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0CC6D1F2CBE4536008C17C5 /* stage_secrets.xcconfig */; };
 		A0CC6D272CBE6407008C17C5 /* CoinsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC6D262CBE6407008C17C5 /* CoinsModel.swift */; };
+		A0CC6D2A2CBE7D2F008C17C5 /* CoinListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC6D292CBE7D2F008C17C5 /* CoinListItemView.swift */; };
 		A0E3A0942C5BAD44007F68E0 /* release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0912C5BAD44007F68E0 /* release.xcconfig */; };
 		A0E3A0952C5BAD44007F68E0 /* stage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */; };
 		A0E3A0962C5BAD44007F68E0 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */; };
@@ -75,6 +76,7 @@
 		A0CC6D1F2CBE4536008C17C5 /* stage_secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = stage_secrets.xcconfig; sourceTree = "<group>"; };
 		A0CC6D252CBE48C6008C17C5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0CC6D262CBE6407008C17C5 /* CoinsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsModel.swift; sourceTree = "<group>"; };
+		A0CC6D292CBE7D2F008C17C5 /* CoinListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListItemView.swift; sourceTree = "<group>"; };
 		A0E3A0912C5BAD44007F68E0 /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = stage.xcconfig; sourceTree = "<group>"; };
 		A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
@@ -239,6 +241,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		A0CC6D282CBE7D0B008C17C5 /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+				A0CC6D292CBE7D2F008C17C5 /* CoinListItemView.swift */,
+			);
+			path = Coins;
+			sourceTree = "<group>";
+		};
 		A0E3A08E2C5BACE0007F68E0 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
@@ -255,6 +265,7 @@
 		A0E3A0902C5BAD00007F68E0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A0CC6D282CBE7D0B008C17C5 /* Coins */,
 				A0732F262CAAABC60069C9FC /* CoinListView.swift */,
 			);
 			path = Views;
@@ -432,6 +443,7 @@
 				A0732F342CAAB3170069C9FC /* GeckoCoinsEndpoint.swift in Sources */,
 				A01234522C7611F7007C0F70 /* NetworkError.swift in Sources */,
 				A0732F2A2CAAB0AF0069C9FC /* AppEnvironment.swift in Sources */,
+				A0CC6D2A2CBE7D2F008C17C5 /* CoinListItemView.swift in Sources */,
 				A0CC6D272CBE6407008C17C5 /* CoinsModel.swift in Sources */,
 				A061F3DA2C9C2B4B001F1EB4 /* Endpoint.swift in Sources */,
 				A0732F362CAABDC80069C9FC /* Coin.swift in Sources */,

@@ -18,16 +18,14 @@ struct CoinListView: View {
     var body: some View {
         VStack {
             header
-            
-            VStack {
-                Text(AppConfig.apiKey)
-                Text(AppConfig.baseUrl)
-                
-                Text("\(model.coins.count)")
-                    .font(.largeTitle)
+            ScrollView(showsIndicators: false) {
+                ForEach(model.coins) { coin in
+                    CoinListItemView(coin: coin)
+                }
+                .padding(.horizontal)
             }
+            .background(Color.gray.opacity(0.15))
         }
-        .padding(.horizontal, 15)
         .task {
             await model.fetchgeckoCoins()
         }
@@ -51,8 +49,4 @@ struct CoinListView: View {
                 .frame(width: 40, height: 40, alignment: .center)
         }
     }
-}
-
-#Preview {
-    CoinListView(model: CoinsModel())
 }
