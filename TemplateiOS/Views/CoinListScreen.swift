@@ -1,5 +1,5 @@
 //
-//  CoinListView.swift
+//  CoinListScreen.swift
 //  TemplateiOS
 //
 //  Created by Sandesh Naik on 30/09/24.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CoinListView: View {
+struct CoinListScreen: View {
     
     @ObservedObject private var model: CoinsModel
     
@@ -24,8 +24,8 @@ struct CoinListView: View {
                 }
                 .padding(.horizontal)
             }
-            .background(Color.gray.opacity(0.15))
         }
+        .background(Color.gray.opacity(0.15))
         .task {
             await model.fetchgeckoCoins()
         }
@@ -48,5 +48,6 @@ struct CoinListView: View {
             Image(systemName: "bell")
                 .frame(width: 40, height: 40, alignment: .center)
         }
+        .padding(.horizontal)
     }
 }

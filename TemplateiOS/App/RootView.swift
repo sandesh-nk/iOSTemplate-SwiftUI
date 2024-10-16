@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct RootView: View {
-    
+    @State private var selectedTab: WTab = .coins
+
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
     var body: some View {
         NavigationStack {
-            CoinListView(model: CoinsModel())
+            VStack {
+                TabView(selection: $selectedTab) {
+                    CoinListScreen(model: CoinsModel())
+                        .tag(WTab.coins)
+                    
+                    Text("Hello")
+                        .tag(WTab.favorites)
+                    
+                    Text("Hello")
+                        .tag(WTab.profile)
+                }
+                WTabView(currentTab: $selectedTab)
+            }
         }
     }
 }

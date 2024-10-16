@@ -42,7 +42,6 @@ final class NetworkEngine<E: Endpoint> {
                     }
                 } else { throw NetworkError.invalidResponse}
             }
-            .map { $0 }
             .mapError { $0 as? NetworkError ?? .unknownError }
             .eraseToAnyPublisher()
     }
