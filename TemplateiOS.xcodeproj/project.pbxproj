@@ -30,6 +30,7 @@
 		A0CC6D2A2CBE7D2F008C17C5 /* CoinListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC6D292CBE7D2F008C17C5 /* CoinListItemView.swift */; };
 		A0CC6D2F2CBFBC01008C17C5 /* WTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC6D2E2CBFBC01008C17C5 /* WTab.swift */; };
 		A0CC6D312CBFC242008C17C5 /* WTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC6D302CBFC242008C17C5 /* WTabView.swift */; };
+		A0CC6D332CC638AF008C17C5 /* CoinDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CC6D322CC638AF008C17C5 /* CoinDetailScreen.swift */; };
 		A0E3A0942C5BAD44007F68E0 /* release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0912C5BAD44007F68E0 /* release.xcconfig */; };
 		A0E3A0952C5BAD44007F68E0 /* stage.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */; };
 		A0E3A0962C5BAD44007F68E0 /* dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */; };
@@ -81,6 +82,7 @@
 		A0CC6D292CBE7D2F008C17C5 /* CoinListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListItemView.swift; sourceTree = "<group>"; };
 		A0CC6D2E2CBFBC01008C17C5 /* WTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTab.swift; sourceTree = "<group>"; };
 		A0CC6D302CBFC242008C17C5 /* WTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WTabView.swift; sourceTree = "<group>"; };
+		A0CC6D322CC638AF008C17C5 /* CoinDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailScreen.swift; sourceTree = "<group>"; };
 		A0E3A0912C5BAD44007F68E0 /* release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = release.xcconfig; sourceTree = "<group>"; };
 		A0E3A0922C5BAD44007F68E0 /* stage.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = stage.xcconfig; sourceTree = "<group>"; };
 		A0E3A0932C5BAD44007F68E0 /* dev.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
@@ -281,6 +283,7 @@
 			children = (
 				A0CC6D282CBE7D0B008C17C5 /* Coins */,
 				A0732F262CAAABC60069C9FC /* CoinListScreen.swift */,
+				A0CC6D322CC638AF008C17C5 /* CoinDetailScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				A0CC6D312CBFC242008C17C5 /* WTabView.swift in Sources */,
 				A061F3DA2C9C2B4B001F1EB4 /* Endpoint.swift in Sources */,
 				A0732F362CAABDC80069C9FC /* Coin.swift in Sources */,
+				A0CC6D332CC638AF008C17C5 /* CoinDetailScreen.swift in Sources */,
 				A093C3322C3E83FF009942B7 /* TemplateiOSApp.swift in Sources */,
 				A0CC6D2F2CBFBC01008C17C5 /* WTab.swift in Sources */,
 			);
