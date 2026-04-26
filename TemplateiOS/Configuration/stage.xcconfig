@@ -8,7 +8,7 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-PRODUCT_BUNDLE_IDENTIFIER = stage.wednesday.is
-BUNDLE_DISPLAY_NAME= W-Stage
+PRODUCT_BUNDLE_IDENTIFIER = ink.thefeather.chicago.stage
+BUNDLE_DISPLAY_NAME = The Feather Stage
 ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon-Stage
-BASE_URL = stage.wedneday.is
+BASE_URL = thefeather.ink
